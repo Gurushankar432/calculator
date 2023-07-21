@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <h1>Calculator</h1>
+
+        <div class="content">
+
+            <label for="celsius">Enter the Fahrenheit Value </label>
+            <input
+                type="number"
+                value=""
+                name="celsius"
+                id="C"
+                placeholder="Fahrenheit - Celsius">
+
+            <button class="Convert" onclick={convert1()}>Convert</button>
+            <button onclick={reset1()}>Reset</button>
+
+            <br><br><br><br>
+
+            <label for="Fahrenheit">Enter the Celsius Value</label>
+            <input
+                type="number"
+                value=""
+                name="Fahrenheit"
+                id="F"
+                placeholder="Celsius - Fahrenheit">
+            <button  class="Convert" onclick={convert2()}>Convert</button>
+
+            <button type="reset" onclick={reset2()}>Reset</button>
+        </div>
+
+        <div class="result">
+
+            <br><br>
+
+            <div id="result1"></div>
+
+            <br><br>
+            <div id="result2"></div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
